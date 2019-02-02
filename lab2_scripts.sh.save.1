@@ -1,0 +1,10 @@
+#!/bin/bash
+# Authors : Baiyu Chen
+# Date: 1/1/2019
+
+echo "enter a name:"
+read username
+grep $1 $2
+grep -c '[0-9]\{3\}\-[0-9]\{3\}\-[0-9]\{4\}'  regex_practice.txt
+grep -o '303-[0-9]\{3\}\-[0-9]\{4\}'  regex_practice.txt>>phone_results.txt
+grep -o '[a-z]'
